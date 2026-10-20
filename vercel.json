@@ -199,6 +199,16 @@
       "source": "/how-to-reduce-indoor-air-pollution-effectively/",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/review",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/review/",
+      "destination": "/",
+      "permanent": true
     }
   ]
 }
