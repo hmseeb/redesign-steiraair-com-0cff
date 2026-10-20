@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Steira Air">
+  <rect width="64" height="64" rx="14" fill="#003b5a"/>
+  <path d="M14 26c10-9 26-12 34-7 6 4 4 11-4 16 5-5 6-9 2-11-6-3-18-1-26 6z" fill="#5aa445"/>
+  <path d="M50 38c-10 9-26 12-34 7-6-4-4-11 4-16-5 5-6 9-2 11 6 3 18 1 26-6z" fill="#ffffff"/>
+</svg>
