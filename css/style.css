@@ -958,6 +958,7 @@ select {
   background: linear-gradient(135deg, var(--green-100), #f1f9ec);
   border: 1px solid #c9e3bd;
 }
+.testimonial-media { margin-bottom: 22px; }
 .review-callout h3 { margin-bottom: 6px; }
 .review-callout p { color: var(--ink-soft); margin: 0; max-width: 58ch; }
 .stars { display: flex; gap: 4px; margin-bottom: 12px; }

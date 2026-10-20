@@ -16,30 +16,22 @@ python3 -m http.server 8000
 ## Structure
 
 ```
-index.html                                  Home
-about-us/                                   About Steira Air
-contact-us-snellville-united-states/        Contact + quote form
-indoor-air-quality-snellville-united-states/
-cam-systems-snellville-united-states/
-commercial-snellville-united-states/        Commercial overview
-residential-snellville-united-states/       Residential overview
-steam-coil-cleaning-.../                    Service pages
-enzyme-36-coil-cleaning-.../
-air-cooled-chiller-steam-cleaning-.../
-cmms-.../ cooling-tower-chillers-.../
-duct-cleaning-.../ pressure-washing-.../
-mold-services-.../ preventive-maintenance-.../
-privacy-policy-for-steira-air/  terms-and-conditions/
+index.html                      Single-page site: hero, why us, devices, steam
+                                cleaning, service comparison, commercial,
+                                residential, testimonials, FAQ, contact + quote
 404.html  robots.txt  sitemap.xml  favicon.svg
 css/style.css   js/main.js   images/source/
 ```
 
+Navigation is anchor based (`#why`, `#devices`, `#steam`, `#services`, `#residential`,
+`#faq`, `#contact`, `#quote`).
+
 ## Forms
 
-Both forms (home quote request, contact page) POST to the LeadrVision endpoint with hidden
-`_form`, `_page` and `_gotcha` fields. JavaScript upgrades them to a `fetch()` submission with an
-inline confirmation; without JavaScript they submit normally and the visitor returns with
+The quote request form POSTs to the LeadrVision endpoint with hidden
+`_form`, `_page` and `_gotcha` fields. JavaScript upgrades it to a `fetch()` submission with an
+inline confirmation; without JavaScript it submits normally and the visitor returns with
 `?submitted=1`, which also renders the confirmation.
 
-`/review` is linked from the footer of every page and from the testimonials and contact sections.
+`/review` is linked from the footer and from the testimonials and contact sections.
 That route is provided by the hosting platform and is intentionally not defined in this repository.
